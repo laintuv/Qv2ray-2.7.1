@@ -232,6 +232,7 @@ PreferencesWindow::PreferencesWindow(QWidget *parent) : QvDialog("PreferenceWind
     //
     // Advanced config.
     {
+        setAllowInsecureCB->setChecked(CurrentConfig.advancedConfig.setAllowInsecure);
         setTestLatencyCB->setChecked(CurrentConfig.advancedConfig.testLatencyPeriodically);
         setTestLatencyOnConnectedCB->setChecked(CurrentConfig.advancedConfig.testLatencyOnConnected);
         disableSystemRootCB->setChecked(CurrentConfig.advancedConfig.disableSystemRoot);
@@ -884,7 +885,17 @@ void PreferencesWindow::on_qvProxyPortCB_valueChanged(int arg1)
     CurrentConfig.networkConfig.port = arg1;
 }
 
-void PreferencesWindow::on_setTestlatencyCB_stateChanged(int arg1)
+void PreferencesWindow::on_setAllowInsecureCB_stateChanged(int arg1)
+{
+    LOADINGCHECK
+    if (arg1 == Qt::Checked)
+    {
+        QvMessageBoxWarn(this, tr("Dangerous Operation"), tr("You will lose the advantage of TLS and make your connection under MITM attack."));
+    }
+    CurrentConfig.advancedConfig.setAllowInsecure = arg1 == Qt::Checked;
+}
+
+void PreferencesWindow::on_setTestLatencyCB_stateChanged(int arg1)
 {
     LOADINGCHECK
     if (arg1 == Qt::Checked)
@@ -894,7 +905,7 @@ void PreferencesWindow::on_setTestlatencyCB_stateChanged(int arg1)
     CurrentConfig.advancedConfig.testLatencyPeriodically = arg1 == Qt::Checked;
 }
 
-void PreferencesWindow::on_setTestlatencyOnConnectedCB_stateChanged(int arg1)
+void PreferencesWindow::on_setTestLatencyOnConnectedCB_stateChanged(int arg1)
 {
     LOADINGCHECK
     if (arg1 == Qt::Checked)

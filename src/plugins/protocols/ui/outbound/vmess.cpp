@@ -34,12 +34,6 @@ void VmessOutboundEditor::SetContent(const QJsonObject &content)
 
         securityCombo->setCurrentText(user.security);
     })
-
-    if (alterLineEdit->value() > 0)
-    {
-        const auto msg = tr("VMess MD5 with Non-zero AlterID has been deprecated, please use VMessAEAD.");
-        InternalProtocolSupportPluginInstance->PluginErrorMessageBox(tr("Non AEAD VMess detected"), msg);
-    }
 }
 
 void VmessOutboundEditor::on_idLineEdit_textEdited(const QString &arg1)

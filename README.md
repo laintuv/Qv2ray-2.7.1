@@ -2,25 +2,39 @@
 <img width="210" height="210" align="left" style="float: left; margin: 0 10px 0 0;" src="https://raw.githubusercontent.com/Qv2ray/Qv2ray/master/assets/icons/qv2ray.png" alt="Qv2ray"/>
 </br>
 <h1>Qv2ray - Unleash Your V2Ray</h1> 
-使用 Qt 框架的跨平台 V2Ray 客户端。支持 Windows, Linux, macOS
+A cross-platform V2Ray client using the Qt framework. Support Windows, macOS, Linux
 </br>
-插件系统支持 SSR / Trojan / Trojan-Go / NaiveProxy
+Plug-in system supports SS / SSR / Trojan / Trojan-Go / NaiveProxy
 </p>
 
 [![GitHub Releases](https://img.shields.io/github/downloads/Qv2ray/Qv2ray/latest/total?style=flat-square&logo=github)](https://github.com/Qv2ray/Qv2ray/releases)
 [![GitHub All Releases](https://img.shields.io/github/downloads/Qv2ray/Qv2ray/total?label=downloads-total&logo=github&style=flat-square)](https://github.com/Qv2ray/Qv2ray/releases)
 
-## 本项目已不再维护
+## Qv2ray [v2.7.1](https://github.com/laintuv00/Qv2ray/releases/tag/v2.7.1) Explorer Edition
 
-> Qv2ray: *2019-03-28 - 2021-08-17*
+```
+Restore Allow Insecure
+Fix Test Latency
+Remove AEAD Pop-ups
+And Several Fixes...
+```
+### Install the kernel:
 
-自 4 月 30 日开发者内部出现矛盾之后的四个月中，并无活跃开发者参与维护，其他组织成员也并未有足够贡献量/能力，因此我们决定停止维护本项目，最新 Release 可见于 [v2.7.0](https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0)。
+<p>Download and extract one of the cores below in the same folder
+</br>
+https://github.com/XTLS/Xray-core/releases
+</br>
+https://github.com/v2fly/v2ray-core/releases
+</br>
+Preferences > Kernel Settings > Select Path and Check Core Settings</p>
 
-感谢所有 Qv2ray 用户，项目组成员与外部贡献者，V2Fly 项目组成员及 V2Ray-Core 外部贡献者
+---
 
-致敬
+## This project is no longer maintained
 
-gcc 写于 8 月 17 日
+Thanks to all Qv2ray users, project team members and external contributors, V2Fly project team members and V2Ray-Core external contributors
+
+gcc written on August 17
 
 -----
 
@@ -141,3 +155,4 @@ Qv2ray is licenced under [![License: GPL v3](https://img.shields.io/badge/Licens
 ## Star History
 
 ![stars](https://starchart.cc/Qv2ray/Qv2ray.svg)
+

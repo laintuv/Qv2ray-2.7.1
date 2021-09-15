@@ -10,7 +10,7 @@ Plug-in system supports SS / SSR / Trojan / Trojan-Go / NaiveProxy
 [![GitHub Releases](https://img.shields.io/github/downloads/Qv2ray/Qv2ray/latest/total?style=flat-square&logo=github)](https://github.com/Qv2ray/Qv2ray/releases)
 [![GitHub All Releases](https://img.shields.io/github/downloads/Qv2ray/Qv2ray/total?label=downloads-total&logo=github&style=flat-square)](https://github.com/Qv2ray/Qv2ray/releases)
 
-## Qv2ray [v2.7.1](https://github.com/laintuv00/Qv2ray/releases/tag/v2.7.1) Explorer Edition
+## Qv2ray [v2.7.1](https://github.com/laintuv00/Qv2ray-2.7.1/releases/tag/v2.7.1) Explorer Edition
 
 ```
 Restore Allow Insecure

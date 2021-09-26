@@ -84,7 +84,7 @@ jobs:
           cd macdeployqt-patched
           mkdir build; cd build;
           cmake .. -DCMAKE_BUILD_TYPE=Release; cmake --build .
-          cp -v ./macdeployqt ${Qt5_DIR}/bin/macdeployqt
+          cp -v ./macdeployqt ${Qt6_DIR}/bin/macdeployqt
       # --------------------------------------------------------
       - name: Win-${{ matrix.arch }} - ${{ matrix.qt_version }} - Setup Ninja
         if: matrix.platform == 'windows-latest'

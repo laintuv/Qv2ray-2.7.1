@@ -102,7 +102,7 @@ jobs:
       - uses: actions/setup-node@v2
         if: matrix.platform == 'macos-latest'
         with:
-          node-version: "4"
+          node-version: "14"
       - run: npm install -g appdmg
         if: matrix.platform == 'macos-latest'
       - name: macOS - ${{ matrix.qt_version }} - Generate Dependencies and Build

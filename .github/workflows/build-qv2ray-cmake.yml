@@ -22,7 +22,7 @@ jobs:
           echo "message=\"$(git log --format=%B -n 1 ${{ github.event.after }} | tr '\n' ' ')\"" >> $GITHUB_ENV
   build:
     needs: check_commit_msg
-    if: ${{ !contains( needs.check_commit_msg.outputs.commit_message, '!QT5') }}
+    if: ${{ !contains( needs.check_commit_msg.outputs.commit_message, '!QT6') }}
     strategy:
       matrix:
         platform: [macos-latest, windows-latest]

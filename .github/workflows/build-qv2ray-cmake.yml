@@ -28,7 +28,7 @@ jobs:
         ui_type: [QWidget]
         platform: [windows-latest]
         build_type: [Release]
-        qt_version: [6.2]
+        qt_version: [6.2.0]
         include:
           - platform: windows-latest
             qtarch: win64_msvc2019_64
@@ -126,7 +126,7 @@ jobs:
           path: release.7z
       - name: Win - ${{ matrix.qt_version }} - Upload binaries to release
         uses: svenstaro/upload-release-action@v1-release
-        if: github.event_name == 'release' && matrix.platform == 'windows-latest' && matrix.ui_type == 'QWidget' && matrix.qt_version == '6.2' && matrix.build_type == 'Release'
+        if: github.event_name == 'release' && matrix.platform == 'windows-latest' && matrix.ui_type == 'QWidget' && matrix.qt_version == '6.2.0' && matrix.build_type == 'Release'
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: release.7z

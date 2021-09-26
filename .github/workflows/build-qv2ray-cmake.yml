@@ -28,7 +28,7 @@ jobs:
         platform: [macos-latest, windows-latest]
         arch: [x64]
         build_type: [Release]
-        qt_version: [6.2]
+        qt_version: [6.1.3]
         include:
           - platform: windows-latest
             arch: x64
@@ -148,7 +148,7 @@ jobs:
           path: Qv2ray.dmg
       - name: macOS - ${{ matrix.qt_version }} - Upload binaries to release
         uses: svenstaro/upload-release-action@v1-release
-        if: github.event_name == 'release' && matrix.platform == 'macos-latest' && matrix.qt_version == '6.2' && matrix.build_type == 'Release'
+        if: github.event_name == 'release' && matrix.platform == 'macos-latest' && matrix.qt_version == '6.1.3' && matrix.build_type == 'Release'
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: Qv2ray.dmg
@@ -170,7 +170,7 @@ jobs:
           path: release.7z
       - name: Win-${{ matrix.arch }} - ${{ matrix.qt_version }} - Upload binaries to release
         uses: svenstaro/upload-release-action@v1-release
-        if: github.event_name == 'release' && matrix.platform == 'windows-latest' && matrix.qt_version == '6.2' && matrix.build_type == 'Release'
+        if: github.event_name == 'release' && matrix.platform == 'windows-latest' && matrix.qt_version == '6.1.3' && matrix.build_type == 'Release'
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: release.7z

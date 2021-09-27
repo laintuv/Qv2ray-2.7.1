@@ -212,7 +212,7 @@ int main(int argc, char *argv[])
 #endif
 
 #ifdef QV2RAY_GUI
-    QApplication::setApplicationDisplayName("Qv2ray 2.7.1");
+    QApplication::setApplicationDisplayName("Explorer Edition");
 #endif
 
 #ifdef QT_DEBUG
